@@ -1,6 +1,7 @@
-from stats import get_num_words
+from stats import times_each_character, get_book_text, get_num_words
 
 def main():
-    get_num_words()
+    get_book_text("books/frankenstein.txt")
+    print(times_each_character(get_book_text))
 
 main()
