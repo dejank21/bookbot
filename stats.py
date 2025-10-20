@@ -7,8 +7,8 @@ def get_num_words(file_contents):
     num_words = file_contents.split()
     print(f"Found {len(num_words)} total words")
 
-def times_each_character(get_book_text):
-    char_list =  get_book_text.split().lower()  
+def times_each_character(text_to_count):
+    char_list =  text_to_count.lower()  
     char_count = {}
     for char in char_list:
         if char in char_count:
