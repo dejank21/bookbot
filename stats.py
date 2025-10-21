@@ -16,3 +16,17 @@ def times_each_character(text_to_count):
         else:
             char_count[char] = 1
     return char_count
+
+def characters_sort(times_each_character):
+    for character in times_each_character:
+        
+
+
+def print_character_count(times_each_character):
+        print("============ BOOKBOT ============")
+        print("Analyzing book found at books/frankenstein.txt...")
+        print("----------- Word Count ----------")
+        print(f"Found {get_num_words} total words")
+        print("------- Character Count ---------")
+        print(characters_sort(times_each_character))
+        print("============= END ===============")
