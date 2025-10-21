@@ -5,7 +5,7 @@ def get_book_text(path_to_file):
 
 def get_num_words(file_contents):
     num_words = file_contents.split()
-    print(f"Found {len(num_words)} total words")
+    return len(num_words)
 
 def times_each_character(text_to_count):
     char_list =  text_to_count.lower()  
@@ -18,15 +18,10 @@ def times_each_character(text_to_count):
     return char_count
 
 def characters_sort(times_each_character):
-    for character in times_each_character:
+    result = sorted(times_each_character)
+    sorted_char = ""
+    for char in result:
+        if char.isalpha():
+            sorted_char += (f"{char}: {times_each_character[char]}\n")
+    return sorted_char
         
-
-
-def print_character_count(times_each_character):
-        print("============ BOOKBOT ============")
-        print("Analyzing book found at books/frankenstein.txt...")
-        print("----------- Word Count ----------")
-        print(f"Found {get_num_words} total words")
-        print("------- Character Count ---------")
-        print(characters_sort(times_each_character))
-        print("============= END ===============")
